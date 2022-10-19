@@ -1,0 +1,57 @@
+.fieldset__span {
+  padding: 0 0 0 10px;
+}
+
+.fieldset__inner-fieldset_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.fieldset__inner-fieldset_no-border {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fieldset__inner-fieldset_width {
+  width: 100%;
+}
+
+.fieldset__label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  width: 100%;
+}
+
+.fieldset__input {
+  border: none;
+  background-color: #F2F0F9;
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  margin: 5px 0 12px 0;
+  color: #6E6893;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.fieldset__input_no-margin {
+  margin: 5px 0 0 0;
+}
+
+.fieldset__textarea {
+  width: 100%;
+  margin: 5px 0 12px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #F2F0F9;
+  resize: none;
+  color: #6E6893;
+  padding: 7px;
+  font-size: 14px;
+}

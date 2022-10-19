@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Modal</title>
+</head>
+<body>
+  <main>
+
+    <div class="container">
+
+      <section aria-label="modal" class="modal">
+        <h2 class="modal__title">Добавить товар</h2>
+        <div class="modal__close">x</div>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="modal__form form">
+
+          <fieldset class="form__fieldset fieldset">
+            <label class="fieldset__label">
+              <span class="fieldset__span">Наименование</span>
+              <input type="text" name="name" required class="fieldset__input">
+            </label>
+
+            <label class="fieldset__label">
+              <span class="fieldset__span">Категория</span>
+              <input type="text" name="category" required class="fieldset__input">
+            </label>
+
+            <label class="fieldset__label">
+              <span class="fieldset__span">Единицы измерения</span>
+              <input type="text" name="units" class="fieldset__input">
+            </label>
+
+            <fieldset class="fieldset__inner-fieldset fieldset__inner-fieldset_row fieldset__inner-fieldset_no-border fieldset__inner-fieldset_width inner-fieldset">
+              <legend class="inner-fieldset__legend">Дисконт</legend>
+              <label class="inner-fieldset__label">
+                <input id="discount" type="checkbox" name="discount" value="" required="" class="inner-fieldset__checkbox">
+              </label>
+
+              <label for="discount-field" class="inner-fieldset__label inner-fieldset__label_width">
+                <input id="discount-field" type="text" name="discount-field" value="" disabled="" class="inner-fieldset__input inner-fieldset__input_active inner-fieldset__input_styles">
+              </label>
+            </fieldset>
+
+            <label class="fieldset__label">
+              <span>Описание</span>
+              <textarea name="description" rows="8" class="fieldset__textarea"></textarea>
+            </label>
+
+            <label class="fieldset__label">
+              <span>Количество</span>
+              <input type="number" name="amount" class="fieldset__input">
+            </label>
+
+            <label class="fieldset__label">
+              <span>Цена</span>
+              <input type="number" min="1" step="any" name="price" required class="fieldset__input fieldset__input_no-margin">
+            </label>
+
+          </fieldset>
+
+          <button type="submit" class="form__button">Добавить товар</button>
+        </form>
+      </section>
+
+    </div>
+
+  </main>
+<script src="styles/inner-fieldset/inner-fieldset.js"></script>
+</body>
+</html>

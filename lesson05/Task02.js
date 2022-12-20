@@ -4,7 +4,7 @@ const isPrime = (primeNumber) => {
   let modifiedPrimeNumber = primeNumber;
 
   if (modifiedPrimeNumber < 2) {
-    return 'Должно быть больше 1';
+    return 'false';
   } else if (modifiedPrimeNumber === 2) {
     return 'true';
   }
@@ -19,5 +19,5 @@ const isPrime = (primeNumber) => {
   return 'true';
 };
 
-console.log(isPrime(1987));
+console.log(isPrime(1));
 
